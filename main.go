@@ -3,17 +3,19 @@ package main
 import (
 	"compress/bzip2"
 	"fmt"
-	"io/ioutil"
 	"os"
-	"os/exec"
 	"strconv"
 	"strings"
 
 	"os/user"
 
-	"github.com/PuerkitoBio/goquery"
 	"github.com/dustin/go-wikiparse"
 	log "github.com/sirupsen/logrus"
+
+	"github.com/iwuzhen/wikipagego/clean/wikitext"
+	"github.com/iwuzhen/wikipagego/config"
+	pgc "github.com/iwuzhen/wikipagego/database/postgres"
+	"gorm.io/gorm/clause"
 )
 
 // var Mode = flag.Int("m", 0, "Input mode 1,")
@@ -35,48 +37,40 @@ var (
 
 func calData(chanout chan []string) {
 	for receive := range chanout {
-		id := receive[0]
-		// title := receive[1]
+		// id := receive[0]
+		title := receive[1]
 		text := receive[2]
-		fmt.Println("原始单词数", len(strings.Fields(text)))
-		fmt.Println("原始字母数", len(text))
-		wikiPath := DataPath + id + ".wiki"
-		htmlPath := DataPath + id + ".html"
-		err := ioutil.WriteFile(wikiPath, []byte(text), 0666)
-		if err != nil {
-			fmt.Println(err)
+		// fmt.Println("原始单词数", len(strings.Fields(text)))
+		// fmt.Println("原始字母数", len(text))
+		CharCount := int32(len(text))
+		worldCount := int32(len(strings.Fields(text)))
+		newcur := wikitext.Clean(&text)
+		// fmt.Println("精简后的", len(strings.Fields(*newcur)))
+		// fmt.Println("精简后的", *newcur)
+		doc := pgc.WikiWordCount{
+			Title:          title,
+			CharCount:      CharCount,
+			WordCount:      worldCount,
+			CleanWordCount: int32(len(strings.Fields(*newcur))),
 		}
+		// pgc.WikiDB.Save(&doc)
+		pgc.WikiDB.Clauses(clause.OnConflict{DoNothing: true}).Create(&doc)
 
-		cmd := exec.Command("/usr/bin/pandoc", "-f", "mediawiki", "-t", "html5", "-s", wikiPath, "-o", htmlPath)
-		// 执行
-		err = cmd.Run()
-		if err != nil {
-			log.Println(wikiPath, err)
-		}
-		// fmt.Println(err)
-		filer, _ := os.Open(htmlPath)
-		doc, err := goquery.NewDocumentFromReader(filer)
-		if err != nil {
-			log.Fatal(err)
-		}
-		text = doc.Text()
-		fmt.Println("简化后字母数", len(strings.Fields(text)))
-
-		filer.Close()
-		os.Remove(wikiPath)
-		os.Remove(htmlPath)
-		// fmt.Println(text)
 	}
-
 }
 
 func main() {
+
+	cfg := config.GetConfig()
+	pgc.NewWikiDBConn(cfg.PgConn)
 
 	userInfo, _ := user.Current()
 	DataPath = "/run/user/" + userInfo.Uid + "/wiki/"
 	os.Mkdir(DataPath, 0755)
 
-	filePath := "/data/ssdj/download/enwiki-20200501-pages-articles.xml.bz2"
+	// filePath := "/data/ssdj/download/enwiki-20200501-pages-articles.xml.bz2"
+	filePath := "/data/ssdj/download/enwiki-20200801-pages-articles.xml.bz2"
+
 	// filePath :="/data/ssdj/download/t.txt.gz"
 
 	fi, err := os.Open(filePath)
@@ -96,20 +90,25 @@ func main() {
 
 	chanin := make(chan []string)
 
-	go calData(chanin)
-	go calData(chanin)
-	go calData(chanin)
-	go calData(chanin)
+	for i := 0; i < 20; i++ {
+		go calData(chanin)
+	}
+	i := 0
 	for err == nil {
 		var page *wikiparse.Page
 		page, err = p.Next()
 		if err == nil {
 			for _, rev := range page.Revisions {
+				i += 1
 				chanin <- []string{strconv.Itoa(int(page.ID)), page.Title, rev.Text}
 			}
 		} else {
 			log.Println(err)
 		}
-		// time.Sleep(2 * time.Second)
+		// time.Sleep(1 * time.Second)
+		if i%1000 == 0 {
+			fmt.Println(i)
+		}
 	}
+	close(chanin)
 }

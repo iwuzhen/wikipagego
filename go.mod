@@ -17,4 +17,5 @@ require (
 	github.com/sirupsen/logrus v1.6.0
 	go.mongodb.org/mongo-driver v1.4.0
 	golang.org/x/sys v0.0.0-20200803210538-64077c9b5642 // indirect
+	gorm.io/gorm v0.2.27 // indirect
 )

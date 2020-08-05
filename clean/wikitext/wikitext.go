@@ -3,13 +3,12 @@
  * @Author: ider
  * @Date: 2020-08-04 19:03:07
  * @LastEditors: ider
- * @LastEditTime: 2020-08-05 10:06:42
+ * @LastEditTime: 2020-08-05 10:50:30
  * @Description:清理 wikiText,留存正常页面
  */
 package wikitext
 
 import (
-	"log"
 	"regexp"
 	"strings"
 )
@@ -53,7 +52,6 @@ func clean_link(source *string) *string {
 	for _, value := range re.FindAllString(*source, -1) {
 		flag = 1
 		arrayS := strings.Split(strings.Trim(value, "[]"), "|")
-		log.Println(arrayS)
 		var repString = arrayS[0]
 		if len(arrayS) > 1 && arrayS[len(arrayS)-1] != "" {
 			repString = arrayS[len(arrayS)-1]
@@ -111,7 +109,11 @@ func remove_refer(source *string) *string {
 }
 
 func clean_empty_line(source *string) *string {
-	re := regexp.MustCompile(`(?m)^\s*$[\r\n]*|[\r\n]+\s+\z`)
+	re := regexp.MustCompile(`(?m)\*`)
 	*source = re.ReplaceAllString(*source, "")
+
+	re = regexp.MustCompile(`(?m)^\s*$[\r\n]*|[\r\n]+\s+\z`)
+	*source = re.ReplaceAllString(*source, "")
+
 	return source
 }
