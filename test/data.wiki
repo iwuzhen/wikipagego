@@ -1,0 +1,48 @@
+{{pp-protected|reason=Persistent addition of [[WP:INTREF|unsourced or poorly sourced content]]|small=yes}}
+{{short description|Political philosophy and movement}}
+{{redirect2|Anarchist|Anarchists|other uses|Anarchists (disambiguation)}}
+{{pp-move-indef}}
+{{good article}}
+{{use dmy dates|date=March 2020}}
+{{use British English|date=January 2014}}
+{{anarchism sidebar}}
+{{basic forms of government}}
+
+
+
+&lt;!-- Associations and diagnosis --&gt;
+Unusual social development becomes apparent early in childhood.&lt;!-- ref name=Volkmar/ --&gt; Autistic infants show less attention to social stimuli, smile and look at others less often, and respond less to their own name. Autistic [[toddler]]s differ more strikingly from [[social norms]]; for example, they have less [[eye contact]] and [[turn-taking]], and do not have the ability to use simple movements to express themselves, such as pointing at things.&lt;ref name=Volkmar/&gt; Three- to five-year-old children with autism are less likely to exhibit social understanding, approach others spontaneously, imitate and respond to emotions, communicate [[nonverbal autism|nonverbal]]ly, and take turns with others. However, they do form [[Attachment (psychology)|attachments]] to their primary caregivers.&lt;ref&gt;{{cite journal | vauthors = Sigman M, Dijamco A, Gratier M, Rozga A | title = Early detection of core deficits in autism | journal = Mental Retardation and Developmental Disabilities Research Reviews | volume = 10 | issue = 4 | pages = 221–233 | year = 2004 | pmid = 15666338 | doi = 10.1002/mrdd.20046 | citeseerx = 10.1.1.492.9930 }}&lt;/ref&gt; Most children with autism display moderately less [[Attachment in children#Secure attachment|attachment security]] than neurotypical children, although this difference disappears in children with higher mental development or less pronounced autistic traits.&lt;ref&gt;{{cite journal | vauthors = Rutgers AH, Bakermans-Kranenburg MJ, van Ijzendoorn MH, van Berckelaer-Onnes IA | title = Autism and attachment: a meta-analytic review | journal = Journal of Child Psychology and Psychiatry, and Allied Disciplines | volume = 45 | issue = 6 | pages = 1123–1134 | date = September 2004 | pmid = 15257669 | doi = 10.1111/j.1469-7610.2004.t01-1-00305.x }}&lt;/ref&gt; Older children and adults with ASD [[Face perception#In individuals with autism spectrum disorder|perform worse on tests of face and emotion recognition]]&lt;ref name=&quot;Sigman&quot;&gt;{{cite journal | vauthors = Sigman M, Spence SJ, Wang AT | title = Autism from developmental and neuropsychological perspectives | journal = Annual Review of Clinical Psychology | volume = 2 | pages = 327–355 | year = 2006 | pmid = 17716073 | doi = 10.1146/annurev.clinpsy.2.022305.095210 }}&lt;/ref&gt; although this may be partly due to a lower ability to define a person's own emotions.&lt;ref&gt;{{cite journal | vauthors = Bird G, Cook R | title = Mixed emotions: the contribution of alexithymia to the emotional symptoms of autism | journal = Translational Psychiatry | volume = 3 | issue = 7 | pages = e285 | date = July 2013 | pmid = 23880881 | pmc = 3731793 | doi = 10.1038/tp.2013.61 }}&lt;/ref&gt;
+
+
+
+=== Pre-modern era ===
+{{main|Definition of anarchism}}
+{{see also|Anarchist terminology}}
+
+[[File:Paolo Monti - Servizio fotografico (Napoli, 1969) - BEIC 6353768.jpg|thumb|upright=.7|[[Zeno of Citium]] (c. 334 – c. 262 BC), whose ''[[Republic (Zeno)|Republic]]'' inspired [[Peter Kropotkin]]{{sfn|Marshall|1993|p=70}}]]
+During the prehistoric era of mankind, an established authority did not exist.{{Citation needed|date=July 2020}} It was after the creation of towns and cities that institutions of authority were established and anarchistic ideas espoused as a reaction.{{sfn|Graham|2005|pp=xi–xiv}} Most notable precursors to anarchism in the ancient world were in [[History of China|China]] and [[Ancient Greece|Greece]]. In China, [[philosophical anarchism]] (i.e. the discussion on the legitimacy of the state) was delineated by [[Taoism|Taoist philosophers]] [[Zhuang Zhou]] and [[Laozi]].{{sfnm|1a1=Coutinho|1y=2016|2a1=Marshall|2y=1993|2p=54}}
+
+Likewise, anarchic attitudes were articulated by tragedians and philosophers in Greece. [[Aeschylus]] and [[Sophocles]] used the myth of [[Antigone]] to illustrate the conflict between rules set by the state and [[autonomy|personal autonomy]]. [[Socrates]] questioned Athenian authorities constantly and insisted to the right of individual freedom of consciousness. [[Cynicism (philosophy)|Cynics]] dismissed human law (''[[Nomos (sociology)|nomos]]'') and associated authorities while trying to live according to nature (''[[physis]]''). [[Stoics]] were supportive of a society based on unofficial and friendly relations among its citizens without the presence of a state.{{sfn|Marshall|1993|pp=4, 66–73}}
+
+
+{{Infobox medical condition (new)
+| name            = Autism
+| image           = Autism-stacking-cans 2nd edit.jpg
+| alt             = Boy stacking cans
+| caption         = Repetitively stacking or lining up objects is commonly associated with autism.
+| field           = [[Psychiatry]]
+| symptoms        = Trouble with [[Interpersonal relationship|social interaction]], impaired [[communication]], restricted interests, repetitive behavior&lt;ref name=Land2008/&gt;
+| complications   = Social isolation, employment problems, family stress, [[bullying]], [[self-harm]]&lt;ref&gt;{{cite web |title=Autism spectrum disorder - Symptoms and causes |url=https://www.mayoclinic.org/diseases-conditions/autism-spectrum-disorder/symptoms-causes/syc-20352928 |website=Mayo Clinic |accessdate=13 July 2019 |language=en}}&lt;/ref&gt;
+| onset           = By age two or three&lt;ref name=NIH2016&gt;{{cite web |title= NIMH &quot; Autism Spectrum Disorder |url= https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd/index.shtml |website= nimh.nih.gov |accessdate= 20 April 2017 |date= October 2016}}&lt;/ref&gt;&lt;ref name=DSM5/&gt;
+| duration        = [[Chronic condition|Long-term]]&lt;ref name=NIH2016/&gt;
+| causes          = [[Heritability of autism|Genetic]] and environmental factors&lt;ref name=Ch2012/&gt;
+| risks           =
+| diagnosis       = Based on behavior and developmental history&lt;ref name=NIH2016/&gt;
+| differential    = [[Reactive attachment disorder]], [[intellectual disability]], [[schizophrenia]]&lt;ref&gt;{{cite book |vauthors=Corcoran J, Walsh J |title=Clinical Assessment and Diagnosis in Social Work Practice |url={{Google books|y28kokLoe78C|page=72|plainurl=yes}} |publisher=Oxford University Press, New York |date=9 February 2006 |isbn=978-0-19-516830-3 |oclc=466433183 |lccn=2005027740 |page=72 }}&lt;/ref&gt;
+| prevention      =
+| management      = [[Behavioral therapy]], [[speech therapy]], [[psychotropic medication]]&lt;ref name=CCD2007/&gt;&lt;ref name=San2016/&gt;&lt;ref&gt;{{cite journal | vauthors = Sukhodolsky DG, Bloch MH, Panza KE, Reichow B | title = Cognitive-behavioral therapy for anxiety in children with high-functioning autism: a meta-analysis | journal = Pediatrics | volume = 132 | issue = 5 | pages = e1341-50 | date = November 2013 | pmid = 24167175 | pmc = 3813396 | doi = 10.1542/peds.2013-1193 }}&lt;/ref&gt;
+| medication      =  [[Atypical antipsychotics|Antipsychotics]], [[antidepressants]], [[stimulants]] (associated symptoms)&lt;ref name=Ji2015/&gt;&lt;ref name=&quot;Oswald DP 2006&quot;/&gt;&lt;ref name=&quot;ReferenceA&quot;/&gt;
+| prognosis = Frequently poor&lt;ref name=Ste106/&gt;
+| frequency       = 24.8 million (2015)&lt;ref name=GBD2015Pre/&gt;
+| deaths          =
+}}

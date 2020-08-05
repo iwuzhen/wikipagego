@@ -1,0 +1,10 @@
+###
+
+POST http://192.168.1.226:28080/foobar/v3/transform/wikitext/to/html
+content-type: application/json
+
+{
+  "wikitext": "== Etymology, terminology and definition =="
+}
+
+
